@@ -1,7 +1,4 @@
 $(document).ready(()=>{
-    $(document).click(()=>{
-        console.log(document.activeElement)
-    })
     $("#homeNavButton").click(() => {
         $('html,body').animate({scrollTop: $("#home").offset().top}, 'slow')
         setActiveNavLink("homeNavButton")
