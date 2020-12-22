@@ -1,5 +1,7 @@
 $(document).ready(()=>{
-    console.log("webpage ready")
+    $(document).click(()=>{
+        console.log(document.activeElement)
+    })
     $("#homeNavButton").click(() => {
         $('html,body').animate({scrollTop: $("#home").offset().top}, 'slow')
         setActiveNavLink("homeNavButton")
@@ -13,7 +15,7 @@ $(document).ready(()=>{
         setActiveNavLink("projectsNavButton")
     })
     $(".arrowShowAboutMe").click(()=>{
-        $('html,body').animate({scrollTop: $("#aboutMe").offset().top}, 'slow')
+        $("#aboutMeNavButton").click()
     })
 })
 
