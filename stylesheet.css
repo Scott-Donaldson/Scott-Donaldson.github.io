@@ -3,6 +3,8 @@ div .contentBox{
 }
 nav {
     width: 100vw;
+    height: 4em;
+    font-size: 1.2em;
 }
 #home {
     top: 0;
@@ -15,13 +17,19 @@ nav {
     text-align: center;
     color:white;
     padding: 0.1em;
-}
-#introduction h1{
-    font-size: 16vw;
+    z-index: 100;
 }
 #introduction-wrapper{
     display: flex;
     margin: auto;
+}
+.codeImage{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-image: url(./assets/Images/code-banner.png);
+    z-index: 1;
+    margin-top: 4em;
 }
 #introduction-arrow-div{
     text-align: center;
@@ -55,6 +63,7 @@ nav {
     padding-top: 10vh;
     text-align: center;
     color:white;
+    font-size: 3em;
 }
 .right-a-little{
     padding-left: 0.2em;
@@ -83,4 +92,16 @@ nav {
 @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+#aboutMe p {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.col .card {
+    margin: auto;
+}
+.padded-container{
+    padding-left: 25rem;
+    padding-right: 25rem;
 }
