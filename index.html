@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Scott Donaldson</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <nav>
-            <div class="nav-wrapper blue-grey darken-3">
-                <a href="index.html" class="brand-logo center hide-on-small-only">Scott Donaldson</a>
-                <a href="index.html" class="brand-logo center hide-on-med-and-up">Scott</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="contactme.html">Contact me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/Images/LogoCircle.png" width=50px>
+                    <span>Scott Donaldson</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="homeNavButton" class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aboutMeNavButton" class="nav-link" href="#">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="projectsNavButton" class="nav-link" href="#">Projects</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="section">
-                <div class="card-panel z-depth-2 blue-grey lighten-1">
-                    <div class="row">
-                        <div class="col s12 m6 l4 hide-on-small-only"><img class="center-block" src="assets/Images/LogoCircle.png" width="300px" height="300px" class="center-align"></div>
-                        <div class="col s12 m6 l4 hide-on-med-and-up"><img class="center-block" src="assets/Images/LogoCircle.png" width="250px" height="250px" class="center-align"></div>
-                        <div class="col s12 m6 l8 white-text">
-                            <p>
-                                Hello, I am Scott Donaldson. A Self-Learning Electronics and Computer Programming enthusiast. I currently have around 3 Years of Software 
-                                Development experience and just under 1 with Hardware. I am an avid Scout Leader and Outdoors advocate with training in Fires, Knives and Axes
-                                as well as being Camp Cook. I have self-taught myself C# and Node JS to allow me to turn my ideas into projects. I have hopes to document my 
-                                Software and Hardware developments through my Github Page, Hackaday Account and Youtube Channel.
-                            </p>
-                            <p>
-                                I am currently studying a Computer Science Degree at Northumbria University and hope to take my studying further through either a Masters or Phd.
-                                Throughout my academic career at College I have participated in a Game Jam and our team came Runners-Up, this is great as on top
-                                of this I won a competition for them to use my Logo as part of their marketing material.
-                            </p>
-                            <p>
-                                If you have gotten this far and not got bored then well done, If you want to contact me for anything then please visit the 
-                                <a href="contactme.html" class="white-text" target="_blank"><u>Contact Me</u></a>
-                                page or send me a Direct message on <a href="https://twitter.com/Sc0tty_D" class="white-text" target="_blank"><u>Twitter</u></a>. Chances are that I will
-                                respond faster on twitter but its ok if you contact me on both to make sure I see it. Well done for making it through my landing page.
-                                One of my modules is Web Technologies so in the coming months I will be invested into making this website higher quality and with more features!
-                            </p>
-                        </div>
-                    </div>
+        <main>
+            <section id="home" class="main">
+                <div id="introduction-wrapper">
+                    <h1 id="introduction" class= "typewriter-text">
+                        <span>Hi, Im Scott.</span><span class="right-a-little">Aspiring full stack developer</span>
+                    </h1>
                 </div>
-            </div>
-            <div class="card-panel z-depth-2 blue-grey lighten-1">
-                <div class="row">
-                    <div class="col s4 m2 l2"><a href="https://twitter.com/Sc0tty_D" target="_blank"><img class="center-block tooltipped" data-position="bottom" data-tooltip="Twitter" src="assets/ConnectionsImages/Twitter.png" width="80px" height="80px"></a></div>
-                    <div class="col s4 m2 l2"><a href="https://www.geocaching.com/p/default.aspx?guid=bd03948a-3992-4f4d-995d-67031d4e79d4" target="_blank"><img class="center-block tooltipped" data-position="bottom" data-tooltip="Geocaching" src="assets/ConnectionsImages/Geocaching.png" width="80px" height="80px"></a></div>
-                    <div class="col s4 m2 l2"><a href="https://github.com/Scott-Donaldson" target="_blank"><img class="center-block tooltipped" data-position="bottom" data-tooltip="Github" src="assets/ConnectionsImages/Github.png" width="80px" height="80x"></a></div>
-                    <div class="col s4 m2 l2"><a href="https://www.youtube.com/channel/UCKLsk6ftl_zv1CjhBFNALjA?view_as=subscriber" target="_blank"><img class="center-block tooltipped" data-position="bottom" data-tooltip="Youtube" src="assets/ConnectionsImages/Youtube.png" width="80px" height="80px"></a></div>
-                    <div class="col s4 m2 l2"><a href="mailto:Scott-Donaldson@outlook.com?Subject=Contact Me - From Portfolio Website"><img class="center-block tooltipped" data-position="bottom" data-tooltip="Email" src="assets/ConnectionsImages/Contact.png" width="80px" height="80px"></a></div>
-                    <div class="col s4 m2 l2"><a href="https://hackaday.io/TheUncannyScrub" target="_blank"><img class="center-block tooltipped" data-position="bottom" data-tooltip="Hackaday" src="assets/ConnectionsImages/Hackaday.png" width="80px" height="80px"></a></div>
+                <div id="introduction-arrow-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="arrowShowAboutMe" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
                 </div>
-            </div>
-        </div>
+            </section>
+            <section id="aboutMe" class="altMain">
+                <h2 class="title">About me.</h2>
+            </section>
+            <section id="projects" class="altMain2">
+                <h2 class="title">Projects.</h2>
+            </section>
+        </main>
+        <script src="js/bootstrap.bundle.min.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     </body>
 </html>
-

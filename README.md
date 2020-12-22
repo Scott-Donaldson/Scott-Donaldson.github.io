@@ -1,5 +1,4 @@
 ## Scott-Donaldson.Github.io
+## scottdonaldson.co.uk
 
-This is my simple portfolio website using the Materialize CSS Framework.
-
-Thanks for stopping by :)
+This website is build in one page using jQuery and Bootstrap.
