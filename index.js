@@ -15,8 +15,14 @@ $(document).ready(()=>{
     $(".arrowShowAboutMe").click(()=>{
         $("#aboutMeNavButton").click()
     })
-    let x = new Date().getFullYear()
-    $("footer p").append(x)
+    let year = new Date().getFullYear()
+    $("footer p").append(year)
+    
+    let viewport = window.innerWidth
+    console.log(viewport)
+    if(viewport <= 768){
+        $("#introduction").removeClass("typewriter-text")
+    }
 })
 
 const setActiveNavLink = (buttonPressed) => {

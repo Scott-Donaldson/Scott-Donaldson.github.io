@@ -133,12 +133,8 @@ nav * {
     margin: auto;
 }
 .padded-container{
-    padding-left: 25rem;
-    padding-right: 25rem;
-}
-.icon-padding{
-    padding-left: 25rem;
-    padding-right: 25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 .col svg{
     display:block;
@@ -204,4 +200,16 @@ footer {
 .bottom-border-accent-thick{
     border-bottom: 5px solid var(--accent);
     padding-bottom: 3px;
+}
+.col{
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-top: 1%;
+}
+#introduction-mobile{
+    border-left: .15em solid var(--accent);
+    padding-left: .3em;
+    white-space: wrap;
+    color: white;
+    line-height: 1.6;
 }
