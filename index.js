@@ -1,4 +1,5 @@
 $(document).ready(()=>{
+    'use strict'
     $("#homeNavButton").click(() => {
         $('html,body').animate({scrollTop: $("#home").offset().top}, 'slow')
         setActiveNavLink("homeNavButton")
@@ -14,7 +15,8 @@ $(document).ready(()=>{
     $(".arrowShowAboutMe").click(()=>{
         $("#aboutMeNavButton").click()
     })
-    $("footer p").append(new Date().getFullYear())
+    let x = new Date().getFullYear()
+    $("footer p").append(x)
 })
 
 const setActiveNavLink = (buttonPressed) => {
