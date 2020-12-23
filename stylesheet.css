@@ -1,10 +1,23 @@
+:root {
+    --accent: #E40066;
+    --accent-hover:#a8004c;
+    --nav-dark: #212529;
+}
+
 div .contentBox{
     height: 100vh;
 }
-nav {
+nav{
     width: 100vw;
     height: 4em;
     font-size: 1.2em;
+}
+nav * {
+    text-decoration: none;
+    color: white;
+}
+.nav-dark{
+    background-color: var(--nav-dark);
 }
 #home {
     top: 0;
@@ -71,7 +84,7 @@ nav {
 .typewriter-text{
     display: flex;
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid var(--accent);
     white-space: nowrap;
     margin: 0 auto;
     animation: 
@@ -87,7 +100,7 @@ nav {
 }
 @keyframes blink-caret {
     from, to{ border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: var(--accent); }
 }
 @keyframes fade-in {
     from { opacity: 0; }
@@ -115,4 +128,62 @@ nav {
 }
 footer {
     color: white;
+}
+.hoz-space{
+    --spacing: 0.5em;
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+}
+
+.nav-link:hover{
+    background-color: var(--accent);;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: #2b3033 7px 7px;
+}
+.active {
+    background-color: var(--accent);;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: #263238 7px 7px;
+}
+
+.button-accent{
+    padding: 5px;
+    background-color: var(--accent);
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: #2b3033 7px 7px;
+
+    text-decoration: none;
+}
+.button-accent:hover{
+    background-color: var(--accent-hover);
+    color: white;
+    text-decoration: none;
+}
+
+/* Colours and Styling */
+
+.bg-accent{
+    background-color: var(--accent);
+}
+.txt-accent{
+    color: var(--accent);
+}
+.underline-accent{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--accent);
+}
+.bottom-border-accent{
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 3px;
+}
+.bottom-border-accent-thick{
+    border-bottom: 5px solid var(--accent);
+    padding-bottom: 3px;
 }
