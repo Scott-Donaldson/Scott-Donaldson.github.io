@@ -14,6 +14,7 @@ $(document).ready(()=>{
     $(".arrowShowAboutMe").click(()=>{
         $("#aboutMeNavButton").click()
     })
+    $("footer p").append(new Date().getFullYear())
 })
 
 const setActiveNavLink = (buttonPressed) => {
