@@ -56,6 +56,11 @@ nav * {
 }
 #projects{
     height: 100vh;
+    position: relative;
+}
+#projects footer{
+    position: absolute;
+    bottom: 1px;
 }
 .main {
     background-color: #37474f;
