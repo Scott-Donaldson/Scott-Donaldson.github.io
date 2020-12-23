@@ -46,6 +46,7 @@ nav * {
     animation: fade-in 1.5s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    margin-bottom: 3em;
 }
 .arrowShowAboutMe{
     cursor: pointer;
