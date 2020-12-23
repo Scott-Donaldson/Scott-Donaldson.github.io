@@ -88,15 +88,28 @@ nav * {
     white-space: nowrap;
     margin: 0 auto;
     animation: 
-      typing 3.5s steps(43, end),
+      typing 3s steps(43, end),
       blink-caret .75s step-end infinite;
 }
 .typewriter-text{
     display: inline-flex;
 }
+.name-anim{
+    animation: white-to-accent 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+.title-anim{
+    border-bottom: 5px solid transparent;
+    padding-bottom: 3px;
+
+    animation: accent-border-reveal 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
 @keyframes typing {
     from { width: 0 }
-    to { width: 100%}
+    to { width: 100% }
 }
 @keyframes blink-caret {
     from, to{ border-color: transparent }
@@ -105,6 +118,14 @@ nav * {
 @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+@keyframes white-to-accent {
+    from {color:white;}
+    to {color: var(--accent)}
+}
+@keyframes accent-border-reveal {
+    from {border-color: transparent}
+    to{border-color: var(--accent)}
 }
 #aboutMe p {
     text-align: center;
