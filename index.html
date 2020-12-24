@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="stylesheet.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#nav-bar">
         <nav class="navbar fixed-top navbar-expand-lg nav-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -19,24 +19,21 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul id="nav-bar" class="nav navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item hoz-space">
-                            <a id="homeNavButton" class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a id="homeNavButton" class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item hoz-space">
-                            <a id="aboutMeNavButton" class="nav-link" href="#about">About me</a>
+                            <a id="aboutMeNavButton" class="nav-link" href="#aboutMe">About me</a>
                         </li>
                         <li class="nav-item hoz-space">
                             <a id="projectsNavButton" class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item hoz-space">
-                            <a href="./assets/Scott_Donaldson_CV.pdf" download="Scott Donaldson CV" class="nav-link">CV</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <main>
+        <main>  
             <section id="home" class="main">
                 <div id="introduction-wrapper">
                     <h1 id="introduction" class= "typewriter-text">
@@ -59,9 +56,6 @@
                     <p>Hey, my name is Scott, im a student based in Newcastle upon Tyne studying Computer Science at Northumbria University.</p>
                     <p></p>
                     <p>I have completed Hacktoberfest 2019 and 2020. I am currently representing my University at Showcode's Unicode Coding Competition</p>
-                </div>
-                <div>
-
                 </div>
                 <div class="container-sm icon-padding">
                     <div class="row">
@@ -159,12 +153,13 @@
                     <br>
                 </div>
                 <footer>
-                    <p class="right-a-little underline-accent">&#169; Scott Donaldson </p>
+                    <p class="right-a-little underline-accent d-md-block">&#169; Scott Donaldson </p>
                 </footer>
             </section>
         </main>
-        <script src="js/bootstrap.bundle.min.js" async defer></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     </body>
 </html>

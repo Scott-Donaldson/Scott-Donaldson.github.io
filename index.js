@@ -1,48 +1,15 @@
 $(document).ready(()=>{
     'use strict'
-    $("#homeNavButton").click(() => {
-        $('html,body').animate({scrollTop: $("#home").offset().top}, 'slow')
-        setActiveNavLink("homeNavButton")
-    })
-    $("#aboutMeNavButton").click(()=>{
+    $("#introduction-arrow-div").click(()=>{
         $('html,body').animate({scrollTop: $("#aboutMe").offset().top}, 'slow')
-        setActiveNavLink("aboutMeNavButton")
     })
-    $("#projectsNavButton").click(()=>{
-        $('html,body').animate({scrollTop: $("#projects").offset().top}, 'slow')
-        setActiveNavLink("projectsNavButton")
-    })
-    $(".arrowShowAboutMe").click(()=>{
-        $("#aboutMeNavButton").click()
-    })
+    $('body').scrollspy({ target: '#nav-bar'})
+
     let year = new Date().getFullYear()
     $("footer p").append(year)
     
     let viewport = window.innerWidth
-    console.log(viewport)
     if(viewport <= 768){
         $("#introduction").removeClass("typewriter-text")
     }
 })
-
-const setActiveNavLink = (buttonPressed) => {
-    switch(buttonPressed){
-        case "homeNavButton":
-            $("#homeNavButton").addClass("active")
-            $("#aboutMeNavButton").removeClass("active")
-            $("#projectsNavButton").removeClass("active")
-            break;
-        case "aboutMeNavButton":
-            $("#homeNavButton").removeClass("active")
-            $("#aboutMeNavButton").addClass("active")
-            $("#projectsNavButton").removeClass("active")
-            break;
-        case "projectsNavButton":
-            $("#homeNavButton").removeClass("active")
-            $("#aboutMeNavButton").removeClass("active")
-            $("#projectsNavButton").addClass("active")
-            break;
-        default:
-            return;
-    }
-}

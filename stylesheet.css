@@ -8,7 +8,9 @@
     --alt-colour2: #546e7a;
     --main-text-colour: white;
 }
-
+body{
+    position: relative;
+}
 div .contentBox{
     height: 100vh;
 }
@@ -60,11 +62,21 @@ nav * {
 }
 #projects{
     height: 100vh;
+    
+}
+#projects.container-fluid{
+    justify-content: center;
     position: relative;
 }
-#projects footer{
-    position: absolute;
-    bottom: 1px;
+footer{
+    color:white;
+    text-align: center;
+
+    bottom: 0;
+    height: 2em;
+    left: 0;
+    position: relative;
+    width:100%;
 }
 .main {
     background-color: var(--main-colour);
@@ -150,23 +162,16 @@ nav * {
     display:block;
     margin: auto;
 }
-footer {
-    color: white;
-}
 .hoz-space{
     --spacing: 0.5em;
     padding-left: var(--spacing);
     padding-right: var(--spacing);
 }
-
 .nav-link:hover{
-    background-color: var(--accent);;
-    color: white;
+    color: gray;
     cursor: pointer;
-    transition-duration: 0.4s;
-    box-shadow: #2b3033 7px 7px;
 }
-.active {
+.nav-link.active {
     background-color: var(--accent);;
     color: white;
     cursor: pointer;
@@ -189,9 +194,6 @@ footer {
     color: white;
     text-decoration: none;
 }
-
-/* Colours and Styling */
-
 .bg-accent{
     background-color: var(--accent);
 }
