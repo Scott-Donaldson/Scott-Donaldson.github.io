@@ -62,11 +62,11 @@ nav * {
 }
 #projects{
     height: 100vh;
-    
+    position: relative;
 }
 #projects.container-fluid{
     justify-content: center;
-    position: relative;
+    
 }
 footer{
     color:white;
@@ -75,7 +75,6 @@ footer{
     bottom: 0;
     height: 2em;
     left: 0;
-    position: relative;
     width:100%;
 }
 .main {
