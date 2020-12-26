@@ -107,6 +107,9 @@ footer{
     color: var(--main-text-colour);
     font-size: 1.5em;
 }
+.skill-col .container-fluid .row .col{
+    margin-top: 10px;
+}
 .right-a-little{
     padding-left: 0.2em;
 }
@@ -233,7 +236,7 @@ footer{
 .col{
     justify-content: space-evenly;
     flex-flow: row wrap;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 #introduction-mobile{
     border-left: .15em solid var(--accent);
