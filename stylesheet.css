@@ -58,11 +58,16 @@ nav * {
     cursor: pointer;
 }
 #aboutMe {
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+}
+.other-text{
+    font-size: 0.8em;
+    text-emphasis: none;
 }
 #projects{
+    display: relative;
     height: 100vh;
-    position: relative;
 }
 #projects.container-fluid{
     justify-content: center;
@@ -91,6 +96,16 @@ footer{
     text-align: center;
     color: var(--main-text-colour);
     font-size: 3em;
+}
+.sub-header{
+    text-align: center;
+    color: var(--main-text-colour);
+    font-size: 2em;
+}
+.skill-col h2{
+    text-align: center;
+    color: var(--main-text-colour);
+    font-size: 1.5em;
 }
 .right-a-little{
     padding-left: 0.2em;
@@ -203,6 +218,9 @@ footer{
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-color: var(--accent);
+}
+.top-border-accent{
+    border-top: 2px solid var(--accent);
 }
 .bottom-border-accent{
     border-bottom: 2px solid var(--accent);
