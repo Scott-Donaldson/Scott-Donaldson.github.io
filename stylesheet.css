@@ -245,3 +245,14 @@ footer{
     color: white;
     line-height: 1.6;
 }
+#aboutMeBox{
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: normal;
+
+}
+#aboutMeBox p {
+    font-size: 1.5em;
+    text-align: justify;
+}
