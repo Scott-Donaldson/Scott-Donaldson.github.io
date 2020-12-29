@@ -256,3 +256,10 @@ footer{
     font-size: 1.5em;
     text-align: justify;
 }
+.btn-padding{
+padding-right: 3%;
+padding-left: 3%;
+padding-top: 0.5%;
+padding-bottom: 0.5%;
+text-align: center;
+}
