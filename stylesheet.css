@@ -9,6 +9,8 @@
     --main-text-colour: white;
 }
 body{
+    overflow-x: hidden;
+    overflow-y:scroll;
     position: relative;
 }
 div .contentBox{
@@ -263,3 +265,16 @@ padding-top: 0.5%;
 padding-bottom: 0.5%;
 text-align: center;
 }
+#introduction-animation{
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+.introduction-layer-bottom{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+} 
