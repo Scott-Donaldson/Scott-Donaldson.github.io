@@ -29,6 +29,7 @@ nav * {
     background-color: var(--nav-dark);
 }
 #home {
+    background-color: transparent;
     top: 0;
     height: 100vh;
     display: flex;
@@ -277,4 +278,5 @@ text-align: center;
     top: 0;
     left:0;
     width:100%;
+    z-index: -1;
 } 
